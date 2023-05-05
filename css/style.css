@@ -13,3 +13,37 @@
 body {
     font-family: 'Fredoka', sans-serif;
 }
+
+.pink-text{
+    color: #B12B59;
+
+}
+
+.white-text{
+    color: #FFFFFF;
+}
+
+.black-bg{
+    color: #100E17;
+}
+
+.blue-text{
+    color: #47B8DB;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header{
+    padding: 20px 0;
+    text-align: center;
+}
+
+p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
