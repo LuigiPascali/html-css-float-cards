@@ -24,12 +24,13 @@ body {
 }
 
 .black-bg{
-    color: #100E17;
+    background-color: #100E17;
 }
 
 .blue-text{
-    color: #47B8DB;
+    color: #007bff;
 }
+
 
 .container{
     max-width: 1200px;
@@ -47,3 +48,48 @@ p{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/* LAYOUT*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card {
+    float: left;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* MAIN */
+
+.card img {
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+
+.card-info h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.card-info p.email {
+    margin-top: 5px;
+    font-weight: bold;
+    
+}
+
+
+  
