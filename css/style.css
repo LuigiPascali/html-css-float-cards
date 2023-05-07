@@ -34,13 +34,42 @@ body {
 }
 
 
+/* 
+    LAYOUT
+*/
+
 .text-container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 calc(50% - 960px/2); 
+  }
+  
+.card {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    float: left;
+  }
+
+.card-content {
+    float: left;
+  }
+
+.card::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 /* 
-    HEADER 
+    HEADER
 */
 
 header{
@@ -54,55 +83,25 @@ p{
 }
 
 /* 
-    LAYOUT
+    MAIN
 */
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.card {
-    
-    width: 30%;
-    margin: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card-container > * {
-    float: left;
-    margin: calc(33,33% - 20px);
-}
-
-/* MAIN */
 
 .card img {
     float: left;
     margin-right: 10px;
-    width: 100px;
     height: 100px;
-}
+    width: 100px;
+  }
+  
 
-
-.card-info h2 {
-    margin: 0 0 5px 0;
-    padding: 5px 5px 0 0;
-    font-size: 1.2em;
-}
-
-.card-info p {
+  
+.card-content h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+.card-content p {
     margin: 0;
-    padding: 5px;
-    font-size: 0.9em;
-}
-
-.card-info .email {
-    margin-top: 5px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    
-}
-
-
+    line-height: 1.5;
+  }
   
